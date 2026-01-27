@@ -1,0 +1,42 @@
+{
+  "name": "cineflow-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/next/dist/bin/next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "websocket": "node server/websocket.js",
+    "check-features": "node scripts/check-features.js",
+    "predeploy": "npm run check-features"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.91.1",
+    "firebase": "^12.8.0",
+    "framer-motion": "^12.29.0",
+    "google-auth-library": "^10.5.0",
+    "lib0": "^0.2.117",
+    "next": "14.2.35",
+    "react": "^18",
+    "react-dom": "^18",
+    "reactflow": "^11.11.4",
+    "uuid": "^13.0.0",
+    "ws": "^8.19.0",
+    "y-protocols": "^1.0.7",
+    "y-websocket": "^3.0.0",
+    "yjs": "^13.6.29",
+    "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
