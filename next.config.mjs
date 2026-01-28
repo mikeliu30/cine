@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // 用于 Docker 部署
+  output: 'export', // 静态导出用于 Firebase Hosting
+  images: {
+    unoptimized: true, // 静态导出需要禁用图片优化
+  },
   eslint: {
     // 生产构建时忽略 ESLint 错误
     ignoreDuringBuilds: true,
