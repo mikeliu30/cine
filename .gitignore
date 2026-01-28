@@ -52,6 +52,7 @@ firebase-debug.log
 vertex-key.json
 gcloud-key.json
 service-account-key.json
+gcp-service-account-key.json
 *.json.key
 
 # Temporary files
