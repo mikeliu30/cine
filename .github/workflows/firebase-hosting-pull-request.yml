@@ -1,6 +1,9 @@
 name: Deploy to Firebase Hosting on PR
 
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - disabled  # 禁用 Firebase，仅使用 Cloud Run 部署
 
 jobs:
   build_and_preview:

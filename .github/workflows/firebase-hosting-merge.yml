@@ -3,7 +3,7 @@ name: Deploy to Firebase Hosting on merge
 on:
   push:
     branches:
-      - main
+      - disabled  # 禁用 Firebase，仅使用 Cloud Run 部署
   workflow_dispatch:
 
 jobs:
