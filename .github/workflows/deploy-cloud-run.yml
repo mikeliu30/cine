@@ -53,8 +53,7 @@ jobs:
             --memory 2Gi \
             --cpu 2 \
             --timeout 300 \
-            --set-env-vars "NODE_ENV=production" \
-            --set-secrets "GOOGLE_APPLICATION_CREDENTIALS_JSON=vertex-credentials:latest"
+            --set-env-vars "NODE_ENV=production"
 
       - name: Show deployment URL
         run: |
