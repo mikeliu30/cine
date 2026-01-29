@@ -54,7 +54,7 @@ jobs:
             --cpu 2 \
             --timeout 300 \
             --set-env-vars "NODE_ENV=production" \
-            --set-secrets "GOOGLE_APPLICATION_CREDENTIALS_JSON=vertex-credentials:latest,OPENAI_API_KEY=openai-api-key:latest,REPLICATE_API_KEY=replicate-api-key:latest,RUNWAY_API_KEY=runway-api-key:latest,ARK_API_KEY=ark-api-key:latest"
+            --set-secrets "GOOGLE_APPLICATION_CREDENTIALS_JSON=vertex-credentials:latest"
 
       - name: Show deployment URL
         run: |
